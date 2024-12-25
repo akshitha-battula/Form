@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+     font-family:Georgia, 'Times New Roman', Times, serif;
+      background-color: black;
+      max-width: 50%;
+      margin: 200px;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Add padding to containers */
+    .container {
+      padding: 60Px;
+      background-color: white;
+    }
+    
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #60a596;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color:lightcoral;
+      outline:invert;
+    }
+    
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid black;
+      margin-bottom: 25px;
+     
+    }
+    
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color:rgb(185, 221, 113);
+      color: rgb(10, 7, 7);
+      padding: 16px 20px;
+      margin: 8px 0;
+      border:1 px dashed black;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    .registerbtn:hover {
+      opacity: 5;
+    }
+    
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+    
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <form action=" "  autocomplete="on" >
+    
+    <div class="container">
+      <h1>Login Here</h1>
+     
+      <hr>
+  
+      <label for="email"><b>Enter Email</b></label>
+      <input type="text" placeholder="example@gmail.com" name="email" id="email" required>
+  
+      <label for="psw"><b>Enter Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Enter Password Again</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+      <!-- this is used to link one form to another using html only -->
+      <div>
+        <!-- <button type="submit" formaction="http://127.0.0.1:5500/forms.html" class="registerbtn">Click me</button> -->
+        <button type='submit' onclick="NewTab()"  class="registerbtn">
+          click me to login
+      </button>
+      </div>
+    </div>
+      <script>
+      
+       function NewTab(){
+        confirm("you have sucessfully login"); 
+        window.open("http://127.0.0.1:5500/course_register.html");
+       }
+      
+    </script> 
+    
+  
+    
+  </form>
+  
+</body>
+</html>
