@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hr {
+            border: 1px solid black;
+            margin-bottom: 25px;
+            border:2px soild black;
+          }
+          body{
+            padding:50px;
+          }
+          * {
+            box-sizing: border-box;
+           
+          } 
+    </style>
+    
+
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <fieldset>
+        <legend><h1>Register Here</h1></legend>
+       
+            <form action="" autocomplete="on">
+                <label for="fname" >Enter Firstname:</label>
+                <input type="text" id="fname" placeholder="ajay"><br><br>
+                <!-- <label for="">last name:</label>
+                <input type="text" id=""><br><br> -->
+                <label for="roll">Enter Roll no.</label>
+                <input type="text" id="roll"><br><br>
+                <label for="num">Enter Phone no.</label>
+                <input type="number" id="num"><br><br>
+                <label for="mail">email:</label>
+                <input type="email" id="mail"><br><br>
+                <label for="dob">enter dob:</label>
+                <input type="date" id="dob"><br><br>
+            
+                 <hr>
+                  <!-- this is radio buttons -->
+                Are you intrested in the course:<br>
+                <input type="radio" name="fav" id="two">
+                <label for="two">yes</label><br>
+                <input type="radio" name="fav" id="three">
+                <label for="three">no</label><br>
+                <input type="radio" name="fav" id="four">
+                <label for="four">maybe</label><br>
+                <hr>
+
+                <!-- this is check box -->
+                 Select your fav course:<br><br>
+                 <input type="checkbox" id="ht">
+                 <label for="ht">Html</label><br>
+                 <input type="checkbox" id="cs">
+                 <label for="cs">Css</label><br>
+                 <input type="checkbox" id="js">
+                 <label for="js">javascript</label><br>
+                 <input type="checkbox" id="rjs">
+                 <label for="rjs">Reactjs</label><br>
+                 <input type="checkbox" id="py">
+                 <label for="py">Python</label><br>
+                 <input type="checkbox" id="ja">
+                 <label for="ja">Java</label><br>
+                 <input type="checkbox" id="sq">
+                 <label for="sq">SQL</label><br>
+                 <input type="checkbox" id="AW">
+                 <label for="AW">AWS</label><br>
+                 <input type="checkbox" id="Grap">
+                 <label for="Grap">Graphical UI</label><br>
+                 <input type="checkbox" id="DJ">
+                 <label for="DJ">Django</label><br>
+                 <input type="checkbox" id="db">
+                 <label for="db">Mango DB</label><br>
+                 <br>
+                 <hr>
+
+                 
+                 <label for="val">select a country</label>
+                 <select name="country" id="val">
+                  <option value="">india</option>
+                  <option> us</option>
+                  <option selected>korea</option>
+                  <option>uk</option>
+                 </select><br><br>
+
+
+                  <!-- to add a file-->
+                 
+                  <label for="f">file:</label>
+                 <input type="file" name="" id="f" value="choose"><br><br>
+                 <label for="addres">address:</label>
+                 <textarea name="" name="" id="addres" cols="23" rows="2"></textarea><br><br>
+
+                 <button type="submit" id="bts" class="btn btn-primary btn-lg">submit</button>
+
+                 <a href="http://127.0.0.1:5500/course_register.html">
+                <button type="button" class="btn btn-primary btn-lg" id="refr">refresh</button></a>
+
+                    <a href="http://127.0.0.1:5500/registration_form.html?email=akshithabattula234%40gmail.com&psw=2&psw-repeat=2">
+                    <button type="button" class="btn btn-primary btn-lg" id="log">logout</button></a>
+                 
+                
+            </form>
+            <!-- <button type="button" class="btn btn-primary btn-lg" id="btn" onclick="btn()">submit</button> -->
+            <script>
+                document.getElementById("bts").addEventListener("click", function1);
+                document.getElementById("refr").addEventListener('click',function2);
+                document.getElementById("log").addEventListener('click',function3);
+
+                function function1(){ 
+                confirm("Your response is submitted ..");
+                } 
+
+                function function2(){
+                 confirm("Your page is refreshed ..");
+                } 
+
+                function function3(){
+                confirm("Logout done sucessfully ..");
+                } 
+                    
+            </script>
+     
+    </fieldset>
+</body>
+</html>
